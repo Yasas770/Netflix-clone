@@ -11,21 +11,27 @@ function Row({title,fetchUrl}) {
         async function fetchData(){
                 const request =await axios.get(fetchUrl);
                 //"https://api.themoviedb.org/3
-                console.log(request);
-                setMovies(request.data.result);
+                console.log(request.data.results);
+                setMovies(request.data.results);
                 return request;
-                
+   
         }
         fetchData();
 
-     },[fetchUrl])
+     },[fetchUrl]);
 
      console.log(movies);
 
+
+     
+
     return (
-        <div>
+        <div className="row"> 
             <h2>{title}</h2>
            
+           <div className="row__posters">
+
+           </div>
             {/* container -> posters */}
             
 
