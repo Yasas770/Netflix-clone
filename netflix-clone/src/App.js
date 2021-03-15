@@ -8,7 +8,8 @@ function App() {
   return (
     <div className="App">
     <h1>yasas's first learning react project</h1>
-    <Row title="NETFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOriginals}></Row>
+    <Row title="NETFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOriginals}
+    isLargeRow></Row>
     <Row title="Trending Now" fetchUrl={requests.fetchTrending}></Row>
     <Row title="Top Rated" fetchUrl={requests.fetchTopRated}></Row>
     <Row title="Action Movies" fetchUrl={requests.fetchActionMovies}></Row>
