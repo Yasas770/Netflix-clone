@@ -38,17 +38,24 @@ function Row({title,fetchUrl,isLargeRow}) {
      };
 
      const handleClick = (movie) => {
+        console.log(movie, 'movie');
+
+
          if(trailerUrl ){
          setTrailerUrl("") ;
+         
 
      }else{
-         movieTrailer(movie?.name || "")
+        console.log("check")
+         movieTrailer(movie?.title|| movie?.name || "" )
          .then((url) =>{
+            console.log("check")
 
           const urlParams =new URLSearchParams(new URL(url).search); 
           setTrailerUrl(  urlParams.get('v'));
+          console.log("check")
          })
-         .catch(error => console.log(error));
+         .catch((error) => console.log(error));
      }
     };
     
