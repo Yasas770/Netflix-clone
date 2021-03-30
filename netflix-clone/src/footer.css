@@ -2,6 +2,7 @@
   height:200px;
   width:100%;
   background-color: #111;
+  
 
 }
 .footer_logo{
@@ -11,6 +12,15 @@
 }
 .name{
   color:#e50914;
-  margin-left: 48%;
+  margin-left: 50%;
   margin-top: 5px;
+}
+.container{
+
+  background-image: linear-gradient(
+      180deg,
+      transparent,
+      rgba(37,37,37,0.61),
+      #111
+  );
 }
